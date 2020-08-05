@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "dva";
 import styles from "./IndexPage.css";
+import { Link } from "dva/router";
 function IndexPage() {
   return (
     <div className={styles.normal}>
@@ -16,6 +17,7 @@ function IndexPage() {
           </a>
         </li>
       </ul>
+      <Link to="/example">go to example page</Link>
     </div>
   );
 }
